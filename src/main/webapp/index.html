@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Khảo sát</title>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+<div class="topbar"></div>
+<header class="brand">
+    <img src="images/murach-logo.png" alt="Murach logo">
+</header>
+
+<main class="container">
+    <h1>Khảo sát</h1>
+    <p class="lead">Nếu bạn có thời gian, chúng tôi rất cảm kích nếu bạn điền vào bảng khảo sát này.</p>
+
+    <form action="emaillist" method="post" class="form-card">
+        <fieldset>
+            <legend>Thông tin của bạn:</legend>
+
+            <label for="firstName">Tên</label>
+            <input id="firstName" name="firstName" type="text" required>
+
+            <label for="lastName">Họ</label>
+            <input id="lastName" name="lastName" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="dob">Ngày sinh</label>
+            <input id="dob" name="dob" type="date" placeholder="dd/mm/yyyy">
+        </fieldset>
+
+        <fieldset>
+            <legend>Bạn biết đến chúng tôi qua đâu?</legend>
+            <div class="inline-group">
+                <label><input type="radio" name="hearAbout" value="Search engine" checked> Công cụ tìm kiếm</label>
+                <label><input type="radio" name="hearAbout" value="Word of mouth"> Bạn bè, người thân</label>
+                <label><input type="radio" name="hearAbout" value="Social Media"> Mạng xã hội</label>
+                <label><input type="radio" name="hearAbout" value="Other"> Khác</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Bạn có muốn nhận thông báo về CD mới và các ưu đãi đặc biệt không?</legend>
+            <div class="opt-block">
+                <label><input type="checkbox" name="receiveCds" value="yes"> CÓ, tôi muốn nhận thông báo.</label>
+            </div>
+            <div class="opt-block">
+                <label><input type="checkbox" name="receiveEmails" value="yes"> CÓ, vui lòng gửi thông báo qua email cho tôi.</label>
+            </div>
+        </fieldset>
+
+        <label for="contactBy">Vui lòng liên hệ với tôi qua:</label>
+        <select id="contactBy" name="contactBy">
+            <option>Email hoặc thư bưu chính</option>
+            <option>Chỉ qua email</option>
+            <option>Chỉ qua thư bưu chính</option>
+        </select>
+
+        <div class="actions">
+            <button type="submit">Gửi đi</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>
