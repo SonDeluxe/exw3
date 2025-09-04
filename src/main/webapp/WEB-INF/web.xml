@@ -6,9 +6,19 @@
 
     <display-name>demo1</display-name>
 
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error_404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/error_java.jsp</location>
+    </error-page>
+
     <servlet>
         <servlet-name>EmailListServlet</servlet-name>
-        <servlet-class>vn.edu.hcmute.fit.web3.EmailListServlet</servlet-class>
+        <servlet-class>vn.edu.hcmute.fit.web3.EmaillistServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
